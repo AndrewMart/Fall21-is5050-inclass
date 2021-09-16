@@ -34,7 +34,6 @@ const concatArray3 = (arr1, arr2) => {
 let newArray3 = concatArray3([1,2],[3,4]);
 console.log(newArray3);
 
-
 console.log(arrayAsString(["test1", "test2"], " - "));
 
 // 3.  function isItemInArray(arr, item):  checks to see if item exists in the arr array.  If so, returns true; otherwise, returns false.  Hint:  use the includes() array method.
@@ -63,13 +62,13 @@ console.log(findArrayPosition([1,2,3,4], 5));
 
 // 5.  function sortStringArray(arr, direction):  sorts the string elements in the arr array in either ascending or descending order depending on the direction parameter.  Returns the sorted array.  Hint: Use the sort() and reverse() array methods.
 
-function sortStringArray(arr, direction) {
+const sortStringArray = (arr, direction) => {
     if (direction > 0) {
         return arr.sort();
     } else {
         return arr.sort().reverse();
     }
-}
+};
 
 console.log(sortStringArray(["a", "c", "b", "d"], 1));
 console.log(sortStringArray(["a", "c", "b", "d"], 0));
